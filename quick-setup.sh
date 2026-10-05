@@ -207,7 +207,7 @@ install_yarn() {
         SKIP_COUNT=$((SKIP_COUNT + 1))
         return
     fi
-    curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - 
+    curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
     sudo apt update
     sudo apt install -y nodejs
     sudo corepack enable
